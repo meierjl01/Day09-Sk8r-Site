@@ -1,15 +1,18 @@
 body {
-  background: url("assets 2/bg.jpg");
-  font-family: sans-serif;
-  // background: url("assets 2/grid.png");
-
+    background: url("assets 2/bg.jpg");
+    font-family: sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    // background: url("assets 2/grid.png");
     ul {
         list-style-type: none;
     }
+
     li {
         display: inline-block;
     }
+
     a {
-      text-decoration: none;
+        text-decoration: none;
     }
 }
