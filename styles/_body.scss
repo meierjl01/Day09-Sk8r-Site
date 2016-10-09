@@ -1,13 +1,76 @@
 body {
 
-  .articles {
+.articles {
+  padding-bottom: 1em;
+
+  .article1 {
     background: $color-primary;
-    a {
-      font: $color-secondary; 
-    }
+    @include outer-container;
+    @include span-columns(4);
+}
+
+  .article2 {
+    background: $color-primary;
+    @include span-columns(4);
   }
+
+  .article3 {
+    background: $color-primary;
+    @include span-columns(4);
+  }
+    .article1 a {
+      font: $color-secondary;
+    }
+}
+
+.articles::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+h3 {
+  position: absolute;
+  color: $color-primary;
+}
+
+.skater-profiles {
+  @include outer-container;
+
+    .lance {
+      @include span-columns(4);
+      position: relative;
+      border: 2px solid $color-primary;
+      margin-bottom: .5em;
+    }
+
+    .rodney {
+      @include span-columns(4);
+      border: 2px solid $color-primary;
+      margin-left: .5em;
+      margin-right: .5em;
+      margin-bottom: .5em;
+    }
+
+    .tommy {
+      @include span-columns(4);
+      border: 2px solid $color-primary;
+      @include omega;
+    }
+
+    .steve {
+      border: 1px solid $color-primary;
+    }
+}
+
+.skater-profiles::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
 .board-designs {
   background: $color-primary;
+  margin-top: 1em;
 }
 }

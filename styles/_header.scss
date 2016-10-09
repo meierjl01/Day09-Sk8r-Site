@@ -1,28 +1,60 @@
+.navtabs {
+  padding: 1em;
+  display: inline-block;
+  float: left;
+
+  .nav-tabs a {
+    background: $color-secondary;
+    color: $color-primary;
+    width: 1em;
+}
+  }
+
+button {
+  float: right;
+  background: transparent;
+  color: $color-primary;
+  border: none;
+  margin-right: -3em;
+}
+
     .header-social-media {
       float: right;
 
-      fa {
-        height: 60px;
-        width: 60px;
-      }
 
-      fa-facebook {
+      .fa-facebook {
         color:#757DB0;
         background: #465199;
       }
 
-      fa-rss {
+      .fa-rss {
         background:#D58F1A;
         color: #DEAD60;
       }
 
-      fa-twitter {
+      .fa-twitter {
         background:#6689C9;
         color: #8AA8D6;
       }
 
-      fa-youtube {
+      .fa-youtube {
         color:#D85E5E;
         background: #C21F17;
       }
+  }
+
+  .logo {
+    position: absolute;
+  }
+
+  .header-photo {
+    position: relative;
+  }
+
+  @media (min-width: 460px) {
+
+  }
+
+  @media (min-width: 880px) {
+    
   }

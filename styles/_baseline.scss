@@ -1,9 +1,23 @@
 body {
     background: url("assets 2/bg.jpg");
     font-family: sans-serif;
-    width: 60%;
+    font-size: 62.5%;
+    width: 70%;
     margin: 0 auto;
     // background: url("assets 2/grid.png");
+    img {
+        max-width: 100%;
+    }
+
+    h2 {
+      font-weight: 100;
+      font-size: 1.5em;
+    }
+
+    h6 {
+      font-weight: 100;
+    }
+
     ul {
         list-style-type: none;
     }
