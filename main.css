@@ -8,7 +8,7 @@ body {
   background: url("assets 2/bg.jpg");
   font-family: sans-serif;
   font-size: 62.5%;
-  width: 70%;
+  width: 75%;
   margin: 0 auto; }
   body img {
     max-width: 100%; }
@@ -23,15 +23,23 @@ body {
     display: inline-block; }
   body a {
     text-decoration: none; }
+  body .submit {
+    color: #FFFFFF;
+    background: #D01F35;
+    display: block;
+    margin-bottom: 10%; }
 
 .navtabs {
-  padding: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
   display: inline-block;
   float: left; }
-  .navtabs .nav-tabs a {
+  .navtabs a {
     background: #D01F35;
     color: #FFFFFF;
-    width: 1em; }
+    width: .3em;
+    padding: .5em;
+    font-size: .2em; }
 
 button {
   float: right;
@@ -55,14 +63,27 @@ button {
     color: #D85E5E;
     background: #C21F17; }
 
-.logo {
-  position: absolute; }
+.photo-plus-logo {
+  position: relative;
+  margin-bottom: 2em; }
+  .photo-plus-logo .logo {
+    position: absolute;
+    margin-top: 10em; }
 
-.header-photo {
-  position: relative; }
+.header-social-media::after {
+  content: '';
+  display: block;
+  clear: both; }
 
+@media (min-width: 460px) {
+  .navtabs ul {
+    margin-left: -4.2em; } }
 body .articles {
   padding-bottom: 1em; }
+  body .articles::after {
+    clear: both;
+    content: "";
+    display: block; }
   body .articles .article1 {
     background: #FFFFFF;
     max-width: 1200px;
@@ -94,8 +115,8 @@ body .articles {
     width: 31.76157%; }
     body .articles .article3:last-child {
       margin-right: 0; }
-  body .articles .article1 a {
-    font: #D01F35; }
+body .article-link {
+  color: #D01F35; }
 body .articles::after {
   content: '';
   display: block;
@@ -111,6 +132,10 @@ body .skater-profiles {
     clear: both;
     content: "";
     display: block; }
+  body .skater-profiles::after {
+    clear: both;
+    content: "";
+    display: block; }
   body .skater-profiles .lance {
     float: left;
     display: block;
@@ -121,6 +146,10 @@ body .skater-profiles {
     margin-bottom: .5em; }
     body .skater-profiles .lance:last-child {
       margin-right: 0; }
+    body .skater-profiles .lance::after {
+      clear: both;
+      content: "";
+      display: block; }
   body .skater-profiles .rodney {
     float: left;
     display: block;
@@ -132,25 +161,50 @@ body .skater-profiles {
     margin-bottom: .5em; }
     body .skater-profiles .rodney:last-child {
       margin-right: 0; }
+    body .skater-profiles .rodney::after {
+      clear: both;
+      content: "";
+      display: block; }
   body .skater-profiles .tommy {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
     border: 2px solid #FFFFFF;
-    margin-right: 0; }
+    float: right; }
     body .skater-profiles .tommy:last-child {
       margin-right: 0; }
+    body .skater-profiles .tommy::after {
+      clear: both;
+      content: "";
+      display: block; }
   body .skater-profiles .steve {
-    border: 1px solid #FFFFFF; }
-body .skater-profiles::after {
-  content: '';
-  display: block;
-  clear: both; }
+    border: 1px solid #FFFFFF;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    body .skater-profiles .steve:last-child {
+      margin-right: 0; }
+body .skater-profiles::after::after {
+  clear: both;
+  content: "";
+  display: block; }
 body .board-designs {
   background: #FFFFFF;
   margin-top: 1em; }
 
+body::after::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+@media (min-width: 460px) {
+  .article-link {
+    margin-left: 2.5em; } }
+@media (min-width: 870px) {
+  .article-link {
+    margin-left: 6.5em; } }
 footer {
   background: #FFFFFF;
   margin: 2em auto; }
@@ -193,8 +247,16 @@ footer {
     padding-top: 4%;
     display: inline-block; }
 
+@media (min-width: 460px) {
+  .submit {
+    width: 10em;
+    padding: 1em;
+    margin-right: 1.5em; } }
 @media (min-width: 880px) {
   .contact-form {
-    padding-left: 10%; } }
+    padding-left: 10%; }
+
+  .submit {
+    margin-right: 6.5em; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -2,11 +2,13 @@ body {
 
 .articles {
   padding-bottom: 1em;
+  @include clearfix;
 
   .article1 {
     background: $color-primary;
     @include outer-container;
     @include span-columns(4);
+
 }
 
   .article2 {
@@ -18,10 +20,12 @@ body {
     background: $color-primary;
     @include span-columns(4);
   }
-    .article1 a {
-      font: $color-secondary;
-    }
+
 }
+
+  .article-link {
+    color: $color-secondary;
+  }
 
 .articles::after {
   content: '';
@@ -36,9 +40,11 @@ h3 {
 
 .skater-profiles {
   @include outer-container;
+  @include clearfix;
 
     .lance {
       @include span-columns(4);
+      @include clearfix;
       position: relative;
       border: 2px solid $color-primary;
       margin-bottom: .5em;
@@ -47,6 +53,7 @@ h3 {
     .rodney {
       @include span-columns(4);
       border: 2px solid $color-primary;
+      @include clearfix;
       margin-left: .5em;
       margin-right: .5em;
       margin-bottom: .5em;
@@ -54,23 +61,41 @@ h3 {
 
     .tommy {
       @include span-columns(4);
+      @include clearfix;
       border: 2px solid $color-primary;
-      @include omega;
+      float: right;
     }
 
     .steve {
       border: 1px solid $color-primary;
+      @include span-columns(8);
     }
 }
 
 .skater-profiles::after {
-  content: '';
-  display: block;
-  clear: both;
+  @include clearfix;
 }
 
 .board-designs {
   background: $color-primary;
   margin-top: 1em;
 }
+}
+
+body::after {
+  @include clearfix;
+}
+
+
+@media (min-width: 460px) {
+  .article-link {
+    margin-left: 2.5em;
+  }
+
+}
+
+@media (min-width: 870px) {
+  .article-link {
+    margin-left: 6.5em;
+  }
 }

@@ -60,11 +60,19 @@ footer {
 }
 
 @media (min-width: 460px) {
-
+  .submit {
+    width: 10em;
+    padding: 1em;
+    margin-right: 1.5em;
+  }
 }
 
 @media (min-width: 880px) {
     .contact-form {
       padding-left: 10%;
+    }
+
+    .submit {
+      margin-right: 6.5em;
     }
 }

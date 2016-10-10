@@ -2,7 +2,7 @@ body {
     background: url("assets 2/bg.jpg");
     font-family: sans-serif;
     font-size: 62.5%;
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     // background: url("assets 2/grid.png");
     img {
@@ -28,5 +28,12 @@ body {
 
     a {
         text-decoration: none;
+    }
+
+    .submit {
+      color: $color-primary;
+      background: $color-secondary;
+      display: block;
+      margin-bottom: 10%;
     }
 }

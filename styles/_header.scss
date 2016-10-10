@@ -1,12 +1,16 @@
+
 .navtabs {
-  padding: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
   display: inline-block;
   float: left;
 
-  .nav-tabs a {
+ a {
     background: $color-secondary;
     color: $color-primary;
-    width: 1em;
+    width: .3em;
+    padding: .5em;
+    font-size: .2em;
 }
   }
 
@@ -43,15 +47,27 @@ button {
       }
   }
 
+  .photo-plus-logo {
+
+    position: relative;
+    margin-bottom: 2em;
+
   .logo {
     position: absolute;
+    margin-top: 10em;
   }
+}
 
-  .header-photo {
-    position: relative;
-  }
+.header-social-media::after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
   @media (min-width: 460px) {
+    .navtabs ul {
+      margin-left: -4.2em;
+    }
 
   }
 
