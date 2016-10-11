@@ -2,6 +2,10 @@ footer {
     background: $color-primary;
     margin: 2em auto;
 
+    .contact-footer {
+      box-shadow: 0 3px  $color-tertiary;
+    }
+
     .board-designs {
         margin-top: 2em;
     }
@@ -34,6 +38,7 @@ footer {
             width: 20px;
             background: #AEAEAE;
             color: #BABABA;
+            text-align: center;
         }
 
         .fa-twitter {
@@ -41,6 +46,7 @@ footer {
             width: 20px;
             background: #7A7A7A;
             color: #9B9B9B;
+            text-align: center;
         }
 
         .fa-youtube {
@@ -48,6 +54,7 @@ footer {
             width: 20px;
             background: #737373;
             color: #898989;
+            text-align: center;
         }
     }
 
@@ -58,21 +65,25 @@ footer {
         display: inline-block;
     }
 }
-
 @media (min-width: 460px) {
-  .submit {
-    width: 10em;
-    padding: 1em;
-    margin-right: 1.5em;
-  }
+    .submit {
+        width: 10em;
+        padding: 1em;
+        margin-right: 1.5em;
+    }
 }
+@media (min-width: 860px) {
+    .contact-us {
+      margin-left: .5em;
+      width: 57%;
+    }
 
-@media (min-width: 880px) {
     .contact-form {
-      padding-left: 10%;
+        padding-left: 5%;
+        margin-right: -5em;
     }
 
     .submit {
-      margin-right: 6.5em;
+        margin-right: 9em;
     }
 }

@@ -37,31 +37,46 @@ body {
   .navtabs a {
     background: #D01F35;
     color: #FFFFFF;
-    width: .3em;
-    padding: .5em;
-    font-size: .2em; }
+    width: 0.3em;
+    padding: 0.5em;
+    font-size: 0.2em;
+    box-shadow: 0 3px #8A8987; }
 
 button {
   float: right;
   background: transparent;
   color: #FFFFFF;
   border: none;
-  margin-right: -3em; }
+  margin-right: -3em;
+  margin-top: 1em; }
 
 .header-social-media {
   float: right; }
   .header-social-media .fa-facebook {
     color: #757DB0;
-    background: #465199; }
+    background: #465199;
+    text-align: center;
+    box-shadow: 0 3px #8A8987; }
   .header-social-media .fa-rss {
     background: #D58F1A;
-    color: #DEAD60; }
+    color: #DEAD60;
+    text-align: center;
+    box-shadow: 0 3px #8A8987; }
   .header-social-media .fa-twitter {
     background: #6689C9;
-    color: #8AA8D6; }
+    color: #8AA8D6;
+    text-align: center;
+    box-shadow: 0 3px #8A8987; }
   .header-social-media .fa-youtube {
     color: #D85E5E;
-    background: #C21F17; }
+    background: #C21F17;
+    text-align: center;
+    box-shadow: 0 3px #8A8987; }
+
+.header-social-media::after {
+  content: '';
+  display: block;
+  clear: both; }
 
 .photo-plus-logo {
   position: relative;
@@ -69,15 +84,29 @@ button {
   .photo-plus-logo .logo {
     position: absolute;
     margin-top: 10em; }
+  .photo-plus-logo .header-photo {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 3px #8A8987; }
 
-.header-social-media::after {
-  content: '';
-  display: block;
-  clear: both; }
+.radio-buttons {
+  text-align: center;
+  padding-bottom: 2em; }
 
 @media (min-width: 460px) {
   .navtabs ul {
-    margin-left: -4.2em; } }
+    margin-left: -4.2em; }
+
+  .header-social-media i {
+    width: 2em;
+    height: 2em; } }
+@media (min-width: 860px) {
+  .navtabs {
+    width: 100%; }
+    .navtabs ul {
+      margin-left: -3em; }
+    .navtabs a {
+      font-size: 1.25em;
+      padding: 1em 2em 1em 2em; } }
 body .articles {
   padding-bottom: 1em; }
   body .articles::after {
@@ -92,7 +121,8 @@ body .articles {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 31.76157%;
+    box-shadow: 0 3px #8A8987; }
     body .articles .article1::after {
       clear: both;
       content: "";
@@ -104,7 +134,8 @@ body .articles {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 31.76157%;
+    box-shadow: 0 3px #8A8987; }
     body .articles .article2:last-child {
       margin-right: 0; }
   body .articles .article3 {
@@ -112,7 +143,8 @@ body .articles {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 31.76157%;
+    box-shadow: 0 3px #8A8987; }
     body .articles .article3:last-child {
       margin-right: 0; }
 body .article-link {
@@ -132,82 +164,104 @@ body .skater-profiles {
     clear: both;
     content: "";
     display: block; }
-  body .skater-profiles::after {
-    clear: both;
-    content: "";
-    display: block; }
-  body .skater-profiles .lance {
+  body .skater-profiles .lm {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
     position: relative;
     border: 2px solid #FFFFFF;
-    margin-bottom: .5em; }
-    body .skater-profiles .lance:last-child {
+    margin-bottom: 0.5em;
+    box-shadow: 0 3px #8A8987; }
+    body .skater-profiles .lm:last-child {
       margin-right: 0; }
-    body .skater-profiles .lance::after {
-      clear: both;
-      content: "";
-      display: block; }
-  body .skater-profiles .rodney {
+  body .skater-profiles .rm {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
     border: 2px solid #FFFFFF;
-    margin-left: .5em;
-    margin-right: .5em;
-    margin-bottom: .5em; }
-    body .skater-profiles .rodney:last-child {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    box-shadow: 0 3px #8A8987; }
+    body .skater-profiles .rm:last-child {
       margin-right: 0; }
-    body .skater-profiles .rodney::after {
-      clear: both;
-      content: "";
-      display: block; }
-  body .skater-profiles .tommy {
+  body .skater-profiles .tg {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
     border: 2px solid #FFFFFF;
-    float: right; }
-    body .skater-profiles .tommy:last-child {
+    float: right;
+    height: 19em;
+    margin-top: -7em;
+    box-shadow: 0 3px #8A8987; }
+    body .skater-profiles .tg:last-child {
       margin-right: 0; }
-    body .skater-profiles .tommy::after {
-      clear: both;
-      content: "";
-      display: block; }
-  body .skater-profiles .steve {
+  body .skater-profiles .sc {
     border: 1px solid #FFFFFF;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%; }
-    body .skater-profiles .steve:last-child {
+    width: 65.88078%;
+    box-shadow: 0 3px #8A8987; }
+    body .skater-profiles .sc:last-child {
       margin-right: 0; }
-body .skater-profiles::after::after {
-  clear: both;
-  content: "";
-  display: block; }
 body .board-designs {
   background: #FFFFFF;
-  margin-top: 1em; }
-
-body::after::after {
+  margin-top: 1em;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3px #8A8987; }
+  body .board-designs::after {
+    clear: both;
+    content: "";
+    display: block; }
+  body .board-designs img {
+    float: left;
+    display: block;
+    margin-right: 2.84259%;
+    width: 7.44167%; }
+    body .board-designs img:last-child {
+      margin-right: 0; }
+body body::after::after {
   clear: both;
   content: "";
   display: block; }
-
 @media (min-width: 460px) {
-  .article-link {
-    margin-left: 2.5em; } }
-@media (min-width: 870px) {
-  .article-link {
-    margin-left: 6.5em; } }
+  body .articles div {
+    height: 26em; }
+  body .article-link {
+    margin-left: 2.5em; }
+  body h3 {
+    font-size: 1em;
+    padding-left: 1em;
+    padding-top: 1em; }
+  body .sc h3 {
+    font-size: 2em;
+    padding-left: 2em;
+    padding-top: 1.5em; } }
+@media (min-width: 860px) {
+  body .articles div {
+    height: 19em; }
+  body .article-link {
+    margin-left: 6.5em; }
+  body h3 {
+    font-size: 2em;
+    padding-left: 1em;
+    padding-top: 1.5em; }
+  body .sc h3 {
+    font-size: 4em;
+    padding-left: 2em;
+    padding-top: 1em; } }
+
 footer {
   background: #FFFFFF;
   margin: 2em auto; }
+  footer .contact-footer {
+    box-shadow: 0 3px #8A8987; }
   footer .board-designs {
     margin-top: 2em; }
   footer .contact-footer::after {
@@ -230,17 +284,20 @@ footer {
       height: 20px;
       width: 20px;
       background: #AEAEAE;
-      color: #BABABA; }
+      color: #BABABA;
+      text-align: center; }
     footer .footer-social-media .fa-twitter {
       height: 20px;
       width: 20px;
       background: #7A7A7A;
-      color: #9B9B9B; }
+      color: #9B9B9B;
+      text-align: center; }
     footer .footer-social-media .fa-youtube {
       height: 20px;
       width: 20px;
       background: #737373;
-      color: #898989; }
+      color: #898989;
+      text-align: center; }
   footer .contact-form {
     float: right;
     width: 40%;
@@ -252,11 +309,16 @@ footer {
     width: 10em;
     padding: 1em;
     margin-right: 1.5em; } }
-@media (min-width: 880px) {
+@media (min-width: 860px) {
+  .contact-us {
+    margin-left: .5em;
+    width: 57%; }
+
   .contact-form {
-    padding-left: 10%; }
+    padding-left: 5%;
+    margin-right: -5em; }
 
   .submit {
-    margin-right: 6.5em; } }
+    margin-right: 9em; } }
 
 /*# sourceMappingURL=main.css.map */

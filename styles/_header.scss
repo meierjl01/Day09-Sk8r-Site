@@ -1,76 +1,107 @@
-
 .navtabs {
-  padding-bottom: 1em;
-  padding-top: 1em;
-  display: inline-block;
-  float: left;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    display: inline-block;
+    float: left;
 
- a {
-    background: $color-secondary;
-    color: $color-primary;
-    width: .3em;
-    padding: .5em;
-    font-size: .2em;
+    a {
+        background: $color-secondary;
+        color: $color-primary;
+        width: 0.3em;
+        padding: 0.5em;
+        font-size: 0.2em;
+        box-shadow: 0 3px  $color-tertiary;
+    }
 }
-  }
 
 button {
-  float: right;
-  background: transparent;
-  color: $color-primary;
-  border: none;
-  margin-right: -3em;
+    float: right;
+    background: transparent;
+    color: $color-primary;
+    border: none;
+    margin-right: -3em;
+    margin-top: 1em;
 }
 
-    .header-social-media {
-      float: right;
+.header-social-media {
+    float: right;
 
-
-      .fa-facebook {
-        color:#757DB0;
+    .fa-facebook {
+        color: #757DB0;
         background: #465199;
-      }
+        text-align: center;
+        box-shadow: 0 3px  $color-tertiary;
+    }
 
-      .fa-rss {
-        background:#D58F1A;
+    .fa-rss {
+        background: #D58F1A;
         color: #DEAD60;
-      }
+        text-align: center;
+        box-shadow: 0 3px  $color-tertiary;
+    }
 
-      .fa-twitter {
-        background:#6689C9;
+    .fa-twitter {
+        background: #6689C9;
         color: #8AA8D6;
-      }
+        text-align: center;
+        box-shadow: 0 3px  $color-tertiary;
+    }
 
-      .fa-youtube {
-        color:#D85E5E;
+    .fa-youtube {
+        color: #D85E5E;
         background: #C21F17;
-      }
-  }
-
-  .photo-plus-logo {
-
-    position: relative;
-    margin-bottom: 2em;
-
-  .logo {
-    position: absolute;
-    margin-top: 10em;
-  }
+        text-align: center;
+        box-shadow: 0 3px  $color-tertiary;
+    }
 }
 
 .header-social-media::after {
-  content: '';
-  display: block;
-  clear: both;
+    content: '';
+    display: block;
+    clear: both;
 }
 
-  @media (min-width: 460px) {
-    .navtabs ul {
-      margin-left: -4.2em;
+.photo-plus-logo {
+    position: relative;
+    margin-bottom: 2em;
+
+    .logo {
+        position: absolute;
+        margin-top: 10em;
     }
 
-  }
+    .header-photo {
+        border: 2px solid $color-primary;
+        box-shadow: 0 3px  $color-tertiary;
+    }
+}
 
-  @media (min-width: 880px) {
-    
+.radio-buttons {
+    text-align: center;
+    padding-bottom: 2em;
+}
+@media (min-width: 460px) {
+    .navtabs ul {
+        margin-left: -4.2em;
+    }
+
+    .header-social-media i {
+        width: 2em;
+        height: 2em;
+    }
+}
+@media (min-width: 860px) {
+
+  .navtabs {
+    width: 100%;
+
+    ul {
+      margin-left: -3em;
+    }
+
+    a {
+      font-size: 1.25em;
+      padding: 1em 2em 1em 2em;
+    }
   }
+}

@@ -1,101 +1,132 @@
 body {
+    .articles {
+        padding-bottom: 1em;
+        @include clearfix;
 
-.articles {
-  padding-bottom: 1em;
-  @include clearfix;
+        .article1 {
+            background: $color-primary;
+            @include outer-container;
+            @include span-columns(4);
+            box-shadow: 0 3px  $color-tertiary;
+        }
 
-  .article1 {
-    background: $color-primary;
-    @include outer-container;
-    @include span-columns(4);
+        .article2 {
+            background: $color-primary;
+            @include span-columns(4);
+            box-shadow: 0 3px  $color-tertiary;
+        }
 
-}
-
-  .article2 {
-    background: $color-primary;
-    @include span-columns(4);
-  }
-
-  .article3 {
-    background: $color-primary;
-    @include span-columns(4);
-  }
-
-}
-
-  .article-link {
-    color: $color-secondary;
-  }
-
-.articles::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-h3 {
-  position: absolute;
-  color: $color-primary;
-}
-
-.skater-profiles {
-  @include outer-container;
-  @include clearfix;
-
-    .lance {
-      @include span-columns(4);
-      @include clearfix;
-      position: relative;
-      border: 2px solid $color-primary;
-      margin-bottom: .5em;
+        .article3 {
+            background: $color-primary;
+            @include span-columns(4);
+            box-shadow: 0 3px  $color-tertiary;
+        }
     }
 
-    .rodney {
-      @include span-columns(4);
-      border: 2px solid $color-primary;
-      @include clearfix;
-      margin-left: .5em;
-      margin-right: .5em;
-      margin-bottom: .5em;
+    .article-link {
+        color: $color-secondary;
     }
 
-    .tommy {
-      @include span-columns(4);
-      @include clearfix;
-      border: 2px solid $color-primary;
-      float: right;
+    .articles::after {
+        content: '';
+        display: block;
+        clear: both;
     }
 
-    .steve {
-      border: 1px solid $color-primary;
-      @include span-columns(8);
+    h3 {
+        position: absolute;
+        color: $color-primary;
     }
-}
 
-.skater-profiles::after {
-  @include clearfix;
-}
+    .skater-profiles {
+        @include outer-container;
 
-.board-designs {
-  background: $color-primary;
-  margin-top: 1em;
-}
-}
+        .lm {
+            @include span-columns(4);
+            position: relative;
+            border: 2px solid $color-primary;
+            margin-bottom: 0.5em;
+            box-shadow: 0 3px  $color-tertiary;
+        }
 
-body::after {
-  @include clearfix;
-}
+        .rm {
+            @include span-columns(4);
+            border: 2px solid $color-primary;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+            margin-bottom: 0.5em;
+            box-shadow: 0 3px  $color-tertiary;
+        }
 
+        .tg {
+            @include span-columns(4);
+            border: 2px solid $color-primary;
+            float: right;
+            height: 19em;
+            margin-top: -7em;
+            box-shadow: 0 3px  $color-tertiary;
+        }
 
-@media (min-width: 460px) {
-  .article-link {
-    margin-left: 2.5em;
-  }
+        .sc {
+            border: 1px solid $color-primary;
+            @include span-columns(8);
+            box-shadow: 0 3px  $color-tertiary;
+        }
+    }
 
-}
+    .board-designs {
+        background: $color-primary;
+        margin-top: 1em;
+        @include outer-container;
+        box-shadow: 0 3px  $color-tertiary;
 
-@media (min-width: 870px) {
-  .article-link {
-    margin-left: 6.5em;
-  }
+        img {
+            @include span-columns(1 of 10);
+        }
+    }
+
+    body::after {
+        @include clearfix;
+    }
+    @media (min-width: 460px) {
+        .articles div {
+          height: 26em;
+        }
+
+        .article-link {
+            margin-left: 2.5em;
+        }
+        h3 {
+          font-size: 1em;
+          padding-left: 1em;
+          padding-top: 1em;
+        }
+
+        .sc h3 {
+          font-size: 2em;
+          padding-left: 2em;
+          padding-top: 1.5em;
+        }
+    }
+    @media (min-width: 860px) {
+        .articles div {
+          height: 19em;
+        }
+
+        .article-link {
+            margin-left: 6.5em;
+        }
+
+        h3 {
+          font-size: 2em;
+          padding-left: 1em;
+          padding-top: 1.5em;
+        }
+
+        .sc h3 {
+          font-size: 4em;
+          padding-left: 2em;
+          padding-top: 1em;
+        }
+    }
 }
