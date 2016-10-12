@@ -3,7 +3,7 @@ footer {
     margin: 2em auto;
 
     .contact-footer {
-      box-shadow: 0 3px  $color-tertiary;
+        box-shadow: 0 3px $color-tertiary;
     }
 
     .board-designs {
@@ -74,8 +74,8 @@ footer {
 }
 @media (min-width: 860px) {
     .contact-us {
-      margin-left: .5em;
-      width: 57%;
+        margin-left: 0.5em;
+        width: 57%;
     }
 
     .contact-form {

@@ -10,7 +10,7 @@
         width: 0.3em;
         padding: 0.5em;
         font-size: 0.2em;
-        box-shadow: 0 3px  $color-tertiary;
+        box-shadow: 0 3px $color-tertiary;
     }
 }
 
@@ -30,28 +30,28 @@ button {
         color: #757DB0;
         background: #465199;
         text-align: center;
-        box-shadow: 0 3px  $color-tertiary;
+        box-shadow: 0 3px $color-tertiary;
     }
 
     .fa-rss {
         background: #D58F1A;
         color: #DEAD60;
         text-align: center;
-        box-shadow: 0 3px  $color-tertiary;
+        box-shadow: 0 3px $color-tertiary;
     }
 
     .fa-twitter {
         background: #6689C9;
         color: #8AA8D6;
         text-align: center;
-        box-shadow: 0 3px  $color-tertiary;
+        box-shadow: 0 3px $color-tertiary;
     }
 
     .fa-youtube {
         color: #D85E5E;
         background: #C21F17;
         text-align: center;
-        box-shadow: 0 3px  $color-tertiary;
+        box-shadow: 0 3px $color-tertiary;
     }
 }
 
@@ -72,7 +72,7 @@ button {
 
     .header-photo {
         border: 2px solid $color-primary;
-        box-shadow: 0 3px  $color-tertiary;
+        box-shadow: 0 3px $color-tertiary;
     }
 }
 
@@ -91,17 +91,16 @@ button {
     }
 }
 @media (min-width: 860px) {
+    .navtabs {
+        width: 100%;
 
-  .navtabs {
-    width: 100%;
+        ul {
+            margin-left: -3em;
+        }
 
-    ul {
-      margin-left: -3em;
+        a {
+            font-size: 1.25em;
+            padding: 1em 2em;
+        }
     }
-
-    a {
-      font-size: 1.25em;
-      padding: 1em 2em 1em 2em;
-    }
-  }
 }

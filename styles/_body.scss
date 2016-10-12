@@ -7,19 +7,19 @@ body {
             background: $color-primary;
             @include outer-container;
             @include span-columns(4);
-            box-shadow: 0 3px  $color-tertiary;
+            box-shadow: 0 3px $color-tertiary;
         }
 
         .article2 {
             background: $color-primary;
             @include span-columns(4);
-            box-shadow: 0 3px  $color-tertiary;
+            box-shadow: 0 3px $color-tertiary;
         }
 
         .article3 {
             background: $color-primary;
             @include span-columns(4);
-            box-shadow: 0 3px  $color-tertiary;
+            box-shadow: 0 3px $color-tertiary;
         }
     }
 
@@ -46,7 +46,7 @@ body {
             position: relative;
             border: 2px solid $color-primary;
             margin-bottom: 0.5em;
-            box-shadow: 0 3px  $color-tertiary;
+            box-shadow: 0 3px $color-tertiary;
         }
 
         .rm {
@@ -55,7 +55,7 @@ body {
             margin-left: 0.5em;
             margin-right: 0.5em;
             margin-bottom: 0.5em;
-            box-shadow: 0 3px  $color-tertiary;
+            box-shadow: 0 3px $color-tertiary;
         }
 
         .tg {
@@ -64,13 +64,13 @@ body {
             float: right;
             height: 19em;
             margin-top: -7em;
-            box-shadow: 0 3px  $color-tertiary;
+            box-shadow: 0 3px $color-tertiary;
         }
 
         .sc {
             border: 1px solid $color-primary;
             @include span-columns(8);
-            box-shadow: 0 3px  $color-tertiary;
+            box-shadow: 0 3px $color-tertiary;
         }
     }
 
@@ -78,7 +78,7 @@ body {
         background: $color-primary;
         margin-top: 1em;
         @include outer-container;
-        box-shadow: 0 3px  $color-tertiary;
+        box-shadow: 0 3px $color-tertiary;
 
         img {
             @include span-columns(1 of 10);
@@ -90,27 +90,28 @@ body {
     }
     @media (min-width: 460px) {
         .articles div {
-          height: 26em;
+            height: 26em;
         }
 
         .article-link {
             margin-left: 2.5em;
         }
+
         h3 {
-          font-size: 1em;
-          padding-left: 1em;
-          padding-top: 1em;
+            font-size: 1em;
+            padding-left: 1em;
+            padding-top: 1em;
         }
 
         .sc h3 {
-          font-size: 2em;
-          padding-left: 2em;
-          padding-top: 1.5em;
+            font-size: 2em;
+            padding-left: 2em;
+            padding-top: 1.5em;
         }
     }
     @media (min-width: 860px) {
         .articles div {
-          height: 19em;
+            height: 19em;
         }
 
         .article-link {
@@ -118,15 +119,15 @@ body {
         }
 
         h3 {
-          font-size: 2em;
-          padding-left: 1em;
-          padding-top: 1.5em;
+            font-size: 2em;
+            padding-left: 1em;
+            padding-top: 1.5em;
         }
 
         .sc h3 {
-          font-size: 4em;
-          padding-left: 2em;
-          padding-top: 1em;
+            font-size: 4em;
+            padding-left: 2em;
+            padding-top: 1em;
         }
     }
 }
